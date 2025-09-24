@@ -23,6 +23,7 @@ Class Monitor mewarisi atribut dari class Elektronik, di class Monitor memiliki 
 1. ukuran_layar, menggunakan string, ukuran layar yang kita inginkan
 2. layar, menggunakan string, untuk jenis panel layar yang kita inginkan
 3. resolusi, menmggunakan string, resulusi pada layar yang kita inginkan
+   
 Di dalam class Monitor memiliki getter dan setter setiap atribut
 
 # MonitorGaming
@@ -30,6 +31,7 @@ class MonitorGaming merupakan warisan dari Monitor, didalam class MonitorGaming 
 1. refresh_rate, menggunakan string, untuk berapa Hertz yang kita inginkan
 2. tamabahan_kabel, menggunakan string, untuk menambah kabel seperti HDMI, Proyektor, dll
 3. mode, menggunakan string, untuk mengganti mode pada layar, Gaming, ColorFull, dll
+   
 di dalam class MonitorGaming terdapat getter dan setter setiap atribut
 
 # Dokumentasi Program
