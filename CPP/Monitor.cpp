@@ -1,7 +1,7 @@
 #include "Elektronik.cpp"
 
 class Monitor : public Elektronik {
-protected:
+private:
     string ukuran_layar, layar, resolusi;
 
 public:
@@ -30,3 +30,4 @@ public:
         resolusi = r; 
     }
 };
+
