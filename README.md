@@ -37,6 +37,7 @@ Untuk Java, C++, dan Python itu sama menginput di terminal, terdapat 3 opsi untu
 1. Tambahkan Data, untuk menambahkan data pada program
 2. Tampilan Data, untuk menampilkan data yang sudah ada atau yang telah kita tambahkan
 3. Keluar, untuk keluar dari program
+
 untuk PHP mengunakan website localhost dari xamppp tampilan bentuk tabel via html, kita bisa menambahkan data dengan mengisi data data pada website localhost tersebut.
 
 # Dokumentasi Foto
