@@ -4,7 +4,7 @@
 using namespace std;
 
 class Elektronik {
-protected:
+private:
     int id;
     string nama, merek, harga, gambar;
 
@@ -45,3 +45,4 @@ public:
         gambar = g; 
     }
 };
+
