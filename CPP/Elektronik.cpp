@@ -13,6 +13,7 @@ public:
     Elektronik(int i, string n, string m, string h, string g)
         : id(i), nama(n), merek(m), harga(h), gambar(g) {}
 
+    //getter 
     int getId() const{ 
         return id; 
     }
@@ -29,6 +30,7 @@ public:
         return gambar; 
     }
 
+    //setter
     void setId(int i){ 
         id = i; 
     }
@@ -45,4 +47,5 @@ public:
         gambar = g; 
     }
 };
+
 
