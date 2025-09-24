@@ -11,13 +11,11 @@ public:
     Monitor_gaming()
         : Monitor(), refresh_rate(""), tambahan_kabel(""), mode("") {}
 
-    Monitor_gaming(int i, string n, string m, string h, string g,
-                   string u, string l, string r,
-                   string rr, string tk, string md)
+    Monitor_gaming(int i, string n, string m, string h, string g, string u, string l, string r, string rr, string tk, string md)
         : Monitor(i, n, m, h, g, u, l, r),
           refresh_rate(rr), tambahan_kabel(tk), mode(md) {}
 
-    // Getter
+    //getter
     string getRefreshRate() const { 
         return refresh_rate; 
     }
@@ -28,7 +26,7 @@ public:
         return mode; 
     }
 
-    // Setter
+    //setter
     void setRefreshRate(string rr) { 
         refresh_rate = rr; 
     }
@@ -39,7 +37,7 @@ public:
         mode = md; 
     }
 
-    // tampilkan data
+    //method tampil menampilkan data lengkat monitor gaming
     void tampil() const {
         cout << left << setw(5)  << getId()          
              << setw(12) << getNama()                 
@@ -55,3 +53,4 @@ public:
              << endl;
     }
 };
+
