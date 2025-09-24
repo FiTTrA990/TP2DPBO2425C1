@@ -1,4 +1,7 @@
 #include "Monitor.cpp"
+#include <iomanip> 
+#include <iostream>
+using namespace std;
 
 class Monitor_gaming : public Monitor {
 private:
@@ -14,38 +17,41 @@ public:
         : Monitor(i, n, m, h, g, u, l, r),
           refresh_rate(rr), tambahan_kabel(tk), mode(md) {}
 
-    string getRefreshRate() const{ 
+    // Getter
+    string getRefreshRate() const { 
         return refresh_rate; 
     }
-    string getTambahanKabel() const{ 
+    string getTambahanKabel() const { 
         return tambahan_kabel; 
     }
-    string getMode() const{ 
+    string getMode() const { 
         return mode; 
     }
 
-    void setRefreshRate(string rr){ 
+    // Setter
+    void setRefreshRate(string rr) { 
         refresh_rate = rr; 
     }
-    void setTambahanKabel(string tk){ 
+    void setTambahanKabel(string tk) { 
         tambahan_kabel = tk; 
     }
-    void setMode(string md){ 
+    void setMode(string md) { 
         mode = md; 
     }
 
+    // tampilkan data
     void tampil() const {
-        cout << left << setw(5) << id
-             << setw(12) << nama
-             << setw(10) << merek
-             << setw(10) << harga
-             << setw(10) << gambar
-             << setw(12) << ukuran_layar
-             << setw(10) << layar
-             << setw(10) << resolusi
-             << setw(12) << refresh_rate
-             << setw(15) << tambahan_kabel
-             << setw(10) << mode
+        cout << left << setw(5)  << getId()          
+             << setw(12) << getNama()                 
+             << setw(10) << getMerek()                
+             << setw(10) << getHarga()             
+             << setw(10) << getGambar()              
+             << setw(12) << getUkuranLayar()         
+             << setw(10) << getLayar()                
+             << setw(10) << getResolusi()              
+             << setw(12) << refresh_rate          
+             << setw(15) << tambahan_kabel             
+             << setw(10) << mode                       
              << endl;
     }
 };
